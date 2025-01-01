@@ -1,11 +1,26 @@
-
-
 <section class="w-[100%] h-[100vh] bg-custom-img bg-cover bg-center">
-  <div class="w-[100%] h-[100vh] bg-[rgba-(0,0,0,0.5)]">
-
+  <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)]">
+    <header class="max-w-[1170px] mx-auto">
+      <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px] items-center">
+        <figure>
+          <img src="/assets/images/logo.png" class="w-[148px]" alt="">
+        </figure>
+        <div class="flex justify-end items-center gap-[10px]"> <!-- Gap works properly here -->
+          <div>
+            <select name="" id="" class="bg-[black] text-white border-[1]
+            border-white p-[7px_20px] rounded-[5px]">
+              <option value="">ENG</option>
+              <option value="">BN</option>
+            </select>
+          </div>
+          <div>
+            <button class="bg-[red] rounded-[5px] text-white p-[7px_20px]">
+              Sign-in
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
   </div>
 </section>
-
-
-
 <router-outlet></router-outlet>
