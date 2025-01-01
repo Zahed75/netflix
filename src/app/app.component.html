@@ -7,29 +7,47 @@
         </figure>
         <div class="flex justify-end items-center gap-[10px]"> <!-- Gap works properly here -->
           <div>
-
-            <div class="relative ">
+            <div class="relative">
               <img class="absolute bg-white top-[8px] left-[5px] w-[15px]" src="assets/images/globe.png" alt="">
             </div>
-
-            <select name="" id="" class="bg-[black] text-white border-[1]
-            border-white sm:p-[5px_25px] p-[5px_20px] rounded-[5px]">
+            <select name="" id="" class="bg-[black] text-white border-[1] border-white sm:p-[5px_25px] p-[5px_20px] rounded-[5px]">
               <option value="">ENG</option>
               <option value="">BN</option>
             </select>
           </div>
           <div>
-            <button class="bg-[red] rounded-[5px] text-white p-[7px_20px]">
-              Sign-in
-            </button>
+            <button class="bg-[red] rounded-[5px] text-white p-[7px_20px]">Sign-in</button>
           </div>
         </div>
       </div>
     </header>
 
-    <div class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-center">
-        <h1 class="sm:text-[45px] text-[30px] text-white font-bold">Unlimited movies, TV shows, and more..</h1>
+    <div class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-white text-center">
+      <h1 class="sm:text-[50px] text-[30px] font-bold">
+        Unlimited movies, TV shows, and more..
+      </h1>
+
+      <h4 class="text-[25px] py-[15px]">Starts at USD 2.99. Cancel anytime.</h4>
+      <p class="text-[20px]">Ready to watch? Enter your email to create or restart your membership.</p>
+
+      <!-- Centering Form and Button -->
+      <div class="max-w-[700px] flex flex-wrap justify-center items-center mx-auto gap-[10px] mt-[20px] px-[10px] sm:px-0">
+        <div class="flex-1 min-w-[250px]">
+          <form action="">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="w-full p-[10px] bg-[transparent] border border-white focus:outline-none rounded-[5px] text-white placeholder-white"
+            />
+          </form>
+        </div>
+        <div>
+          <button class="bg-red-500 text-white px-[20px] py-[10px] rounded-[5px]">Get Started</button>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
 <router-outlet></router-outlet>
