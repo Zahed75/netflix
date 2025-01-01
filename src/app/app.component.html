@@ -7,8 +7,13 @@
         </figure>
         <div class="flex justify-end items-center gap-[10px]"> <!-- Gap works properly here -->
           <div>
+
+            <div class="relative ">
+              <img class="absolute bg-white top-[8px] left-[5px] w-[15px]" src="assets/images/globe.png" alt="">
+            </div>
+
             <select name="" id="" class="bg-[black] text-white border-[1]
-            border-white p-[7px_20px] rounded-[5px]">
+            border-white sm:p-[5px_25px] p-[5px_20px] rounded-[5px]">
               <option value="">ENG</option>
               <option value="">BN</option>
             </select>
@@ -21,6 +26,10 @@
         </div>
       </div>
     </header>
+
+    <div class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-center">
+        <h1 class="sm:text-[45px] text-[30px] text-white font-bold">Unlimited movies, TV shows, and more..</h1>
+    </div>
   </div>
 </section>
 <router-outlet></router-outlet>
