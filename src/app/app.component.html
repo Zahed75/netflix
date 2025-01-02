@@ -35,7 +35,7 @@
 </section>
 
 <!---------TV Content Start---------->
-<section class="w-full border-t-[8px] border-t-[#605d5d] sm:py-[100px] py-[50px] bg-black">
+<section class="w-full border-t-[8px] border-t-[#605d5d] sm:py-[50px] py-[50px] bg-black">
   <div class="max-w-[1170px] mx-auto flex flex-wrap items-center gap-6 px-4">
     <!-- Left Section -->
     <div class="sm:flex-[1] flex-[100%] text-white">
@@ -48,15 +48,43 @@
 
     <!-- Right Section -->
     <div class="sm:flex-[1] flex-[100%]">
-      <figure class="w-full">
-        <video>
-          <source src="https://youtu.be/Yb6Xjez65II?si=Q3V7l7qFwM78LSht">
+      <figure class="w-full relative">
+        <video class="absolute w-[80%] left-[10%] bottom-[20%] z-[1]" controls>
+          <source src="assets/video/net.mp4">
         </video>
-        <img src="/assets/images/img.png" alt="TV Image" class="w-full rounded-[5px]" />
+        <img src="/assets/images/img.png" alt="TV Image" class="w-full rounded-[5px] z-[2]" />
       </figure>
     </div>
   </div>
 </section>
 <!---------TV Content End---------->
+
+
+<!----------Download Start------------>
+
+<section class="w-full border-t-[8px] border-t-[#605d5d] sm:py-[50px] py-[50px] bg-black">
+  <div class="max-w-[1170px] mx-auto flex flex-wrap items-center gap-6 px-4">
+    <!-- Left Section -->
+    <div class="sm:flex-[1] flex-[100%] text-white">
+      <h2 class="sm:text-[50px] text-[30px] font-bold leading-[55px]">Download the Offline</h2>
+      <p class="sm:text-[25px] text-[18px] pt-[10px]">
+        Watch on smart TVs, PlayStation, Xbox, Chromecast,
+        <br class="hidden sm:block"> Apple TV, Players, and more.
+      </p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="sm:flex-[1] flex-[100%]">
+      <figure class="w-full relative">
+        <video class="absolute w-[80%] left-[10%] bottom-[20%] z-[1]">
+          <source src="assets/images/img.png">
+        </video>
+        <img src="/assets/images/img.png" alt="TV Image" class="w-full rounded-[5px] z-[2]" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!----------Download End------------>
 
 <router-outlet></router-outlet>
