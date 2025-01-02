@@ -1,53 +1,62 @@
-<section class="w-[100%] h-[100vh] bg-custom-img bg-cover bg-center">
-  <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)]">
+<section class="w-full h-[100vh] bg-custom-img bg-cover bg-center">
+  <div class="w-full h-[100vh] bg-[rgba(0,0,0,0.5)]">
     <header class="max-w-[1170px] mx-auto">
-      <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px] items-center">
+      <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-4 items-center">
         <figure>
-          <img src="/assets/images/logo.png" class="w-[148px]" alt="">
+          <img src="/assets/images/logo.png" class="w-[148px]" alt="Logo">
         </figure>
-        <div class="flex justify-end items-center gap-[10px]"> <!-- Gap works properly here -->
-          <div>
-            <div class="relative">
-              <img class="absolute bg-white top-[8px] left-[5px] w-[15px]" src="assets/images/globe.png" alt="">
-            </div>
-            <select name="" id="" class="bg-[black] text-white border-[1] border-white sm:p-[5px_25px] p-[5px_20px] rounded-[5px]">
+        <div class="flex justify-end items-center gap-4">
+          <div class="relative">
+            <img class="absolute bg-white top-[8px] left-[5px] w-[15px]" src="assets/images/globe.png" alt="Globe">
+            <select class="bg-black text-white border border-white sm:px-[25px] px-[20px] py-[5px] rounded-[5px]">
               <option value="">ENG</option>
               <option value="">BN</option>
             </select>
           </div>
-          <div>
-            <button class="bg-[red] rounded-[5px] text-white p-[7px_20px]">Sign-in</button>
-          </div>
+          <button class="bg-red-500 text-white rounded-[5px] px-[20px] py-[7px]">Sign-in</button>
         </div>
       </div>
     </header>
 
-    <div class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-white text-center">
-      <h1 class="sm:text-[50px] text-[30px] font-bold">
-        Unlimited movies, TV shows, and more..
-      </h1>
-
+    <div class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-white text-center px-4">
+      <h1 class="sm:text-[50px] text-[30px] font-bold">Unlimited movies, TV shows, and more..</h1>
       <h4 class="text-[25px] py-[15px]">Starts at USD 2.99. Cancel anytime.</h4>
       <p class="text-[20px]">Ready to watch? Enter your email to create or restart your membership.</p>
 
-      <!-- Centering Form and Button -->
-      <div class="max-w-[700px] flex flex-wrap justify-center items-center mx-auto gap-[10px] mt-[20px] px-[10px] sm:px-0">
-        <div class="flex-1 min-w-[250px]">
-          <form action="">
-            <input
-              type="text"
-              placeholder="Enter your email"
-              class="w-full p-[10px] bg-[transparent] border border-white focus:outline-none rounded-[5px] text-white placeholder-white"
-            />
-          </form>
-        </div>
-        <div>
-          <button class="bg-red-500 text-white px-[20px] py-[10px] rounded-[5px]">Get Started</button>
-        </div>
+      <div class="max-w-[700px] flex flex-wrap justify-center items-center mx-auto gap-4 mt-[20px] px-4 sm:px-0">
+        <form action="" class="flex-1 min-w-[250px]">
+          <input type="text" placeholder="Enter your email"
+                 class="w-full p-[10px] bg-transparent border border-white focus:outline-none rounded-[5px] text-white placeholder-white">
+        </form>
+        <button class="bg-red-500 text-white px-[20px] py-[10px] rounded-[5px]">Get Started</button>
       </div>
-
     </div>
   </div>
 </section>
+
+<!---------TV Content Start---------->
+<section class="w-full border-t-[8px] border-t-[#605d5d] sm:py-[100px] py-[50px] bg-black">
+  <div class="max-w-[1170px] mx-auto flex flex-wrap items-center gap-6 px-4">
+    <!-- Left Section -->
+    <div class="sm:flex-[1] flex-[100%] text-white">
+      <h2 class="sm:text-[50px] text-[30px] font-bold">Enjoy on Your TV</h2>
+      <p class="sm:text-[25px] text-[18px] pt-[10px]">
+        Watch on smart TVs, PlayStation, Xbox, Chromecast,
+        <br class="hidden sm:block"> Apple TV, Players, and more.
+      </p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="sm:flex-[1] flex-[100%]">
+      <figure class="w-full">
+        <video>
+          <source src="https://youtu.be/Yb6Xjez65II?si=Q3V7l7qFwM78LSht">
+        </video>
+        <img src="/assets/images/img.png" alt="TV Image" class="w-full rounded-[5px]" />
+      </figure>
+    </div>
+  </div>
+</section>
+<!---------TV Content End---------->
 
 <router-outlet></router-outlet>
